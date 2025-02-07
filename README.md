@@ -1,2 +1,4 @@
-# Action-HanzWrt-X86
-Action For HanzWrt X86
+# Actions-HanzWrt-X86
+
+官方版：
+https://github.com/immortalwrt/immortalwrt.git
