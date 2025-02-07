@@ -141,13 +141,7 @@ jobs:
 
           ./scripts/feeds update -a
           ./scripts/feeds install -a
-
-      - name: Custom Packages
-        run: |
-          cd ./wrt/package/
-
-          $GITHUB_WORKSPACE/Scripts/Packages.sh
-          $GITHUB_WORKSPACE/Scripts/Handles.sh
+          ./scripts/feeds install -f libev lm-sensors luci-app-samba4 wsdd2 libpam luci luci-i18n-base-zh-cn liblzma libnetsnmp glib2 libgpiod
 
       - name: Custom Settings
         run: |
