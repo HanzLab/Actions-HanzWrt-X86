@@ -1,5 +1,5 @@
 #云编译公用核心
-name: Hanz-Wrt
+name: HanzWrt-Core
 
 on:
   workflow_call:
@@ -13,16 +13,7 @@ on:
       WRT_NAME:
         required: true
         type: string
-      WRT_SSID:
-        required: true
-        type: string
-      WRT_WORD:
-        required: true
-        type: string
       WRT_IP:
-        required: true
-        type: string
-      WRT_PW:
         required: true
         type: string
       WRT_REPO:
@@ -31,29 +22,21 @@ on:
       WRT_BRANCH:
         required: true
         type: string
-      WRT_SOURCE:
-        required: false
-        type: string
-      WRT_PACKAGE:
-        required: false
-        type: string
-      WRT_TEST:
-        required: false
-        type: string
+
 
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
   WRT_TARGET: ${{inputs.WRT_TARGET}}
   WRT_THEME: ${{inputs.WRT_THEME}}
   WRT_NAME: ${{inputs.WRT_NAME}}
-  WRT_SSID: ${{inputs.WRT_SSID}}
-  WRT_WORD: ${{inputs.WRT_WORD}}
+  #WRT_SSID: ${{inputs.WRT_SSID}}
+  #WRT_WORD: ${{inputs.WRT_WORD}}
   WRT_IP: ${{inputs.WRT_IP}}
-  WRT_PW: ${{inputs.WRT_PW}}
+  #WRT_PW: ${{inputs.WRT_PW}}
   WRT_REPO: ${{inputs.WRT_REPO}}
   WRT_BRANCH: ${{inputs.WRT_BRANCH}}
-  WRT_PACKAGE: ${{inputs.WRT_PACKAGE}}
-  WRT_TEST: ${{inputs.WRT_TEST}}
+  #WRT_PACKAGE: ${{inputs.WRT_PACKAGE}}
+  #WRT_TEST: ${{inputs.WRT_TEST}}
 
 jobs:
   core:
