@@ -22,6 +22,9 @@ on:
       WRT_BRANCH:
         required: true
         type: string
+      WRT_TEST:
+        required: false
+        type: string
 
 
 env:
