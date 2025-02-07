@@ -42,7 +42,7 @@ jobs:
       #默认主机名
       WRT_NAME: HanzWrt
       #默认地址
-      WRT_IP: ${{ secrets.PROXY_ADDR }}
+      WRT_IP: 192.188.188.250
       #源码链接
       WRT_REPO: https://github.com/${{matrix.SOURCE}}.git
       #源码分支
